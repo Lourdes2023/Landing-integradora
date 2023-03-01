@@ -71,7 +71,7 @@
   18%,
   25% {
     opacity: 5;
-    background-image: url(./Hero/proyectos11.png);
+    background-image: url(./Assets/img/Diseño14.png);
     background-position: center center;
     background-size: cover;
   }
@@ -85,7 +85,7 @@
   58%,
   62% {
     opacity: 5;
-    background-image: url(./Hero/Diseño14.png);
+    background-image: url(./Assets/img/Diseño41.png);
     background-position: center center;
     background-size: cover;
   }
@@ -102,7 +102,7 @@
   92%,
   98% {
     opacity: 5;
-    background-image: url(./Hero/Diseño41.png);
+    background-image: url(./Assets/img/proyectos11.png);
     background-position: center center;
     background-size: cover;
   }
@@ -118,14 +118,14 @@
 
 @keyframes flicker {
   0% {
-    background-image: url(./Hero/proyectos10.png);
+    background-image: url(./Assets/img/proyectos10.png);
     background-size: 100%;
     background-position: bottom;
     box-shadow: inset 0 0 1rem #0496f8cc;
   }
 
   100% {
-    background-image: url(./Hero/proyectos10.png);
+    background-image: url(./Assets/img/proyectos10.png);
     background-position: top;
     background-size: 0%;
     box-shadow: inset 0 0 1rem #6ebbe4cc;
