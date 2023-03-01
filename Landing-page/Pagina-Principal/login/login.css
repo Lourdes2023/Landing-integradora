@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Kanit:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,700;1,300;1,400;1,500&family=Rubik+80s+Fade&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+}
+:root {
+  --grad--gray: #85827e;
+  --grad--lightgray: #e3dddd;
+  --rgba--blur: rgba(255, 255, 255, 0.5);
+  --grad--blueskay: #0196f9;
+  --grad--blueBlack: #03086f;
+  --text-orange: #f67e05;
+  --textNav-blue: #2196f3;
+  --back--lightblue: #28d8db;
+  --text--footblue: #007bff;
+  --text-green: #a1ed09;
+  --box--lightgray: #c6dce0cc;
+
+  --text--graybrown: #333333;
+  --text--gray: #555555;
+  --text--bronze: #85782d;
+  --text-bronzeBlack: #704118;
+
+  --bord-white: #ffffff;
+  --bord--ligtgwhite: #fff;
+  --back-grayblack: #333;
+  --text-yelloubronze: #c2bc95;
+  --box--blue: #0062cc;
+  --box--greenblack: #253333c4;
+  --box--ligthblueskay: #48a2bd;
+  --gradbox-graylight: #b8b1b1;
+  --gradbox--whiteyellou: #fafaf8;
+}
+
+body {
+  background: linear-gradient(
+    var(--grad--gray),
+    var(--grad--lightgray),
+    var(--grad--gray)
+  );
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Estilos Header y logo*/
+.header__navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #3ccbce;
+  z-index: 1;
+  background-color: var(--rgba--blur);
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid var(--bord--ligtgwhite);
+  transition: 1s ease-in-out;
+}
+
+.logo {
+  width: 10%;
+  height: 100%;
+  margin-right: 20%;
+}
+
+.logo img {
+  width: 100%;
+}
+/* Estilos navbar  */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 100px 0px 0px;
+}
+
+.navbar__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navbar__list a {
+  color: var(--textNav-blue);
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  height: 100%;
+}
+
+.navbar__list li {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  border: 6px solid transparent;
+  border-top-color: var(--bord--ligtgwhite);
+  height: 40px;
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+/* Estilos sub-menu */
+.dropdown .dropdown__menu {
+  display: none;
+  position: absolute;
+  width: 250px;
+  top: 70%;
+  background-color: var(--back--lightblue);
+  visibility: hidden;
+}
+.dropdown__menu li {
+  text-align: center;
+  width: 100%;
+  border: 6px solid transparent;
+  border-top-color: var(--bord--ligtgwhite);
+  box-shadow: inset 0 0 1rem var(--box--lightgray);
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  transform: translateX(-50px);
+  transition: 1s ease-in-out;
+}
+
+/* Estilos sección información "Servicios" */
+
+/*Estilos smart home */
+#service__about {
+  padding: 50px;
+  flex-direction: column;
+  margin-top: 15vh;
+  max-width: 1200px;
+  width: 100%;
+}
+.s__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  row-gap: 10px;
+}
+
+.s__container__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 20px;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+.s__container__info2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.s__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px;
+  width: 50%;
+  gap: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.about__box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  width: 80%;
+}
+.box p {
+  color: var(--text--graybrown);
+  font-size: 18px;
+  padding: 30px;
+  text-align: start;
+  line-height: 1.8;
+}
+.boxtitle {
+  color: var(--text--bronze);
+  font-size: 24px;
+  padding: 20px;
+}
+
+/* Estilos Gradientes para titulo servicios  */
+.wave {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+  background: linear-gradient(
+    45deg,
+    var(--text--graybrown) 0%,
+    var(--grad--gray) 50%,
+    var(--text-bronzeBlack) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wave2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  background: linear-gradient(
+    45deg,
+    var(--text--footblue) 0%,
+    var(--grad--blueBlack) 50%,
+    var(--text--footblue) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.s__text span {
+  color: var(--text--gray);
+}
+.s__text p {
+  color: var(--text--graybrown);
+  font-size: 24px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  padding: 10px;
+}
+
+/* Estilos para slaider de imagenes  */
+.s__slaider {
+  display: flex;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.s__slaider li {
+  list-style: none;
+  width: 100%;
+}
+.s__slaider img {
+  width: 500px;
+}
+.s__slaideshow {
+  display: flex;
+  width: 100%;
+  position: relative;
+  animation: slide 20s ease-in-out infinite;
+}
+/* Estilos para los videos */
+.s__video {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.s__video video {
+  width: 80%;
+  margin-left: 70px;
+}
+
+/* Estilos para la sección de Contacto */
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.contact__info {
+  flex-basis: 40%;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+.contact__info h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--text--bronze);
+}
+
+.contact__info p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--text--gray);
+}
+
+.contact__info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.contact__info li {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact__info li i {
+  margin-right: 10px;
+  color: var(--text--footblue);
+}
+
+.contact__form {
+  flex-basis: 55%;
+  animation: fadeInRight 1s ease;
+}
+
+.contact__form h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--text--bronze);
+}
+
+.contact__form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.contact__form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid var(--bord--ligtgwhite);
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+  border-color: var(--back--lightblue);
+}
+
+.contact__form button {
+  border: 1px solid var(--bord--ligtgwhite);
+  background-color: var(--grad--blueskay);
+  border-radius: 10px;
+  color: var(--bord--ligtgwhite);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact__form button:active {
+  border-radius: 50%;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: var(--back-grayblack);
+  color: var(--bord--ligtgwhite);
+  padding: 50px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__column {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.footer__column h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--bord--ligtgwhite);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+ul li i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+ul li a {
+  color: var(--grad--blueskay);
+  text-decoration: none;
+}
+
+/* Estilo para el enlace "Volver al inicio" */
+
+.back-to-top {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #f26608;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}

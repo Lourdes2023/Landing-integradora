@@ -1,0 +1,364 @@
+/* Animaciones y efectos para el navbar */
+
+.header__navbar :hover {
+  animation: fondo1 0.5s ease-in-out;
+}
+.navbar__list li :hover {
+  color: #a1ed09;
+  animation: fondo1 0.5s ease-in-out;
+}
+
+@keyframes fondo1 {
+  0% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent,
+      rgba(255, 255, 255, 0.2) 50%
+    );
+    background-size: 0%;
+  }
+  50% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent,
+      rgba(255, 255, 255, 0.2) 50%
+    );
+    background-size: 30%;
+  }
+
+  100% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent,
+      rgba(255, 255, 255, 0.2) 50%
+    );
+    background-size: 100%;
+  }
+}
+/* efectos sub-menu */
+.dropdown .dropdown__menu ::before {
+  content: "";
+  display: inline-block;
+  border: 6px solid transparent;
+  border-top-color: #fff;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+}
+.dropdown:hover .dropdown__menu {
+  display: block;
+}
+.navbar__list li:hover ul {
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+}
+.dropdown__menu li:hover {
+  transform: translateX(1px);
+}
+.nav__link:active {
+  color: red;
+}
+/* Animacines y efectos para la sección portada de home */
+/*Imagenes de fondo del backgrount de portada home*/
+@keyframes backgrountshow {
+  0%,
+  10%,
+  12%,
+  14%,
+  18%,
+  25% {
+    opacity: 5;
+    background-image: url(./Hero/proyectos11.png);
+    background-position: center center;
+    background-size: cover;
+  }
+  30% {
+    opacity: 1;
+  }
+  40%,
+  50%,
+  52%,
+  54%,
+  58%,
+  62% {
+    opacity: 5;
+    background-image: url(./Hero/Diseño14.png);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70%,
+  80%,
+  82%,
+  84%,
+  88%,
+  92%,
+  98% {
+    opacity: 5;
+    background-image: url(./Hero/Diseño41.png);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* Animación de los edificios de portada de home */
+.building {
+  animation: flicker 5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    background-image: url(./Hero/proyectos10.png);
+    background-size: 100%;
+    background-position: bottom;
+    box-shadow: inset 0 0 1rem #0496f8cc;
+  }
+
+  100% {
+    background-image: url(./Hero/proyectos10.png);
+    background-position: top;
+    background-size: 0%;
+    box-shadow: inset 0 0 1rem #6ebbe4cc;
+  }
+}
+/* Animación titulo h1 portada de home */
+@keyframes fondo {
+  0% {
+    background: linear-gradient(
+      45deg,
+      var(--text-orange) 0%,
+      var(--gradbox-graylight) 50%,
+      var(--text-bronzeBlack) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  50% {
+    background: linear-gradient(
+      45deg,
+      var(--gradbox-graylight) 0%,
+      var(--text-bronzeBlack) 50%,
+      var(--text-orange) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    background: linear-gradient(
+      45deg,
+      var(--gradbox-graylight) 0%,
+      var(--text-orange) 50%,
+      var(--text-bronzeBlack) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Estilos para las tarjetas sección información */
+
+/* Animación del fondo de texto  */
+@keyframes fondo2 {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+
+  75% {
+    opacity: 1.5;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+/* Transiciones y animaciones del borde de las tarjetas de texto */
+.card:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.card:hover::before,
+.card:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 160px;
+  width: 100%;
+  max-width: 250px;
+  background: #00f9f9;
+  box-shadow: 0 0 1rem rgb(5, 45, 244);
+  border-radius: 25px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+.card:hover:after {
+  background: #f69a05;
+  box-shadow: 0 0 1rem rgb(246, 104, 3);
+  animation: 2s counterclockwise infinite;
+}
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+
+/*Color de las tarjetas de texto*/
+
+.card:nth-child(2n) {
+  background-color: #e9c48b;
+  border: 1px solid #cadddc;
+}
+
+.card:nth-child(3n) {
+  background-color: #91b677;
+  border: 1px solid #cadddc;
+}
+
+.card:nth-child(4n) {
+  background-color: #e2a4a0;
+  border: 1px solid #cadddc;
+}
+
+/* Transiciones para los títulos h2 de las sección info  */
+
+.intro h2 {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.intro:hover h2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Transiciones para los párrafos sección info */
+
+.intro p {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.intro:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Transiciones y Animaciones sección Contacto */
+
+.contact__form button:hover {
+  background-color: #0062cc;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}

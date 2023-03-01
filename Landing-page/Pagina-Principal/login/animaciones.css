@@ -1,0 +1,168 @@
+/* Animacion de background de body */
+body {
+  background: radial-gradient(circle at center, #999492, #a2a6e4);
+  animation: animateBackground 1s linear infinite;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+/* Animaciones y efectos para el navbar */
+
+.header__nav :hover {
+  animation: fondo1 0.5s ease-in-out;
+}
+.navbar__list li :hover {
+  color: var(--text-green);
+  animation: fondo1 0.5s ease-in-out;
+}
+
+@keyframes fondo1 {
+  0% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent,
+      rgba(255, 255, 255, 0.2) 50%
+    );
+    background-size: 0%;
+  }
+  50% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent,
+      rgba(255, 255, 255, 0.2) 50%
+    );
+    background-size: 30%;
+  }
+
+  100% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent,
+      rgba(255, 255, 255, 0.2) 50%
+    );
+    background-size: 100%;
+  }
+}
+/* Efectos sub-menu */
+.dropdown .dropdown__menu ::before {
+  content: "";
+  display: inline-block;
+  border: 6px solid transparent;
+  border-top-color: #fff;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+}
+.dropdown:hover .dropdown__menu {
+  display: block;
+}
+.navbar__list li:hover ul {
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+}
+.dropdown__menu li:hover {
+  transform: translateX(1px);
+}
+.nav__link:active {
+  color: red;
+}
+
+/* Animacion de los titulos H3 efecto movimiento de fondo */
+
+@keyframes wave {
+  0% {
+    background-size: 30%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Animación para imagenes efecto slaider */
+@keyframes slide {
+  0%,
+  10%,
+  20% {
+    right: 0%;
+  }
+
+  25%,
+  35%,
+  45% {
+    right: 200%;
+  }
+
+  50%,
+  60%,
+  70% {
+    right: 0%;
+  }
+  75%,
+  80%,
+  90% {
+    range: 200%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+/* Transiciones y Animaciones sección Contacto */
+
+.contact__form button:hover {
+  background-color: #0062cc;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Efectos para el enlace "Volver al inicio" */
+.back-to-top:hover {
+  background-color: #f26608;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Efecto de desvanecimiento al colocar el cursor sobre el enlace */
+.back-to-top:hover {
+  opacity: 0.7;
+}
+
+/* Mostrar el botón cuando se desplaza hacia abajo de la página */
+@media (min-height: 600px) {
+  .back-to-top {
+    display: block;
+  }
+}
