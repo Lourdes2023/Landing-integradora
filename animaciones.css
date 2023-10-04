@@ -1,120 +1,7 @@
-/* Animaciones y efectos para el navbar */
-
-.header__navbar :hover {
-  animation: fondo1 0.5s ease-in-out;
-}
-.navbar__list li :hover {
-  color: #a1ed09;
-  animation: fondo1 0.5s ease-in-out;
-}
-
-@keyframes fondo1 {
-  0% {
-    background: linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.1) 50%,
-      transparent,
-      rgba(255, 255, 255, 0.2) 50%
-    );
-    background-size: 0%;
-  }
-  50% {
-    background: linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.1) 50%,
-      transparent,
-      rgba(255, 255, 255, 0.2) 50%
-    );
-    background-size: 30%;
-  }
-
-  100% {
-    background: linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.1) 50%,
-      transparent,
-      rgba(255, 255, 255, 0.2) 50%
-    );
-    background-size: 100%;
-  }
-}
-/* efectos sub-menu */
-.dropdown .dropdown__menu ::before {
-  content: "";
-  display: inline-block;
-  border: 6px solid transparent;
-  border-top-color: #fff;
-  position: absolute;
-  transition: transform 0.3s ease-in-out;
-}
-.dropdown:hover .dropdown__menu {
-  display: block;
-}
-.navbar__list li:hover ul {
-  opacity: 1;
-  height: auto;
-  visibility: visible;
-}
-.dropdown__menu li:hover {
-  transform: translateX(1px);
-}
-.nav__link:active {
-  color: red;
-}
-/* Animacines y efectos para la sección portada de home */
 /*Imagenes de fondo del backgrount de portada home*/
 @keyframes backgrountshow {
-  0%,
-  10%,
-  12%,
-  14%,
-  18%,
-  25% {
-    opacity: 5;
-    background-image: url(./Assets/img/Diseño14.png);
-    background-position: center center;
-    background-size: cover;
-  }
-  30% {
-    opacity: 1;
-  }
-  40%,
-  50%,
-  52%,
-  54%,
-  58%,
-  62% {
-    opacity: 5;
-    background-image: url(./Assets/img/Diseño41.png);
-    background-position: center center;
-    background-size: cover;
-  }
-
-  68% {
-    opacity: 1;
-  }
-
-  70%,
-  80%,
-  82%,
-  84%,
-  88%,
-  92%,
-  98% {
-    opacity: 5;
-    background-image: url(./Assets/img/proyectos11.png);
-    background-position: center center;
-    background-size: cover;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 /* Animación de los edificios de portada de home */
-.building {
-  animation: flicker 5s infinite alternate;
-}
 
 @keyframes flicker {
   0% {
@@ -207,8 +94,8 @@
   animation: 1s clockwise infinite;
 }
 .card:hover:after {
-  background: #f69a05;
-  box-shadow: 0 0 1rem rgb(246, 104, 3);
+  background: #fffb04;
+  box-shadow: 0 0 1rem rgb(7, 159, 247);
   animation: 2s counterclockwise infinite;
 }
 @keyframes clockwise {
@@ -292,18 +179,11 @@
 /*Color de las tarjetas de texto*/
 
 .card:nth-child(2n) {
-  background-color: #e9c48b;
-  border: 1px solid #cadddc;
+  background-color: #afa2b4;
 }
 
 .card:nth-child(3n) {
-  background-color: #91b677;
-  border: 1px solid #cadddc;
-}
-
-.card:nth-child(4n) {
-  background-color: #e2a4a0;
-  border: 1px solid #cadddc;
+  background-color: #335871;
 }
 
 /* Transiciones para los títulos h2 de las sección info  */
