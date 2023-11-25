@@ -5,62 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tecnologia-BIM</title>
-    <link rel="stylesheet" href="../login.css" />
-    <link rel="stylesheet" href="../animaciones.css" />
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../mediaqueris.css">
+    <link rel="stylesheet" href="../../animaciones.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
   </head>
   <body>
     <!-- Estructura header -->
-    <header class="header__navbar">
-      <nav class="header__navbar navbar">
-        <a
-          href="http://127.0.0.1:5500/Landing-page/Assets/smarbuilding/index.html"
-          class="logo"
-        >
-          <img src="../img/LogoHelca.png" alt="logo" />
-        </a>
-        <ul class="navbar__list">
-          <li>
-            <a
-              href="http://127.0.0.1:5500/Landing-page/Assets/smarbuilding/index.html"
-              class="nav__link"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="http://127.0.0.1:5500/Landing-page/Assets/smarbuilding/index.html"
-              class="nav__link"
-              >Nosotros</a
-            >
-          </li>
-          <li class="dropdown">
-            <a href="#" class="nav__link">Servicios</a>
-            <ul class="dropdown__menu">
-              <li>
-                <a href="../smarbuilding/index.html" class="nav__link"
-                  >Smart Building</a
-                >
+     <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+            <img src="../../Assets/img/logo.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
               </li>
-              <li>
-                <a href="../smarthome/index.html" class="nav__link"
-                  >Smart Home</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="#About">Nosotros</a>
               </li>
-              <li>
-                <a href="../sustentabilidad/index.html" class="nav__link"
-                  >Sustentabilidad</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="#Contacto">Contacto</a>
               </li>
-              <li>
-                <a href="../tecnologia/index.html" class="nav__link"
-                  >Tecnologia BIM</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./index.html"
+                      >Smart Building</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../smarthome/index.html"
+                      >Smart Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../tecnologia/index.html"
+                      >Tecnologia BIM</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-          <li><a href="../Noticias/index.html">Noticias</a></li>
-          <li><a href="#contact" class="nav__link">Contacto</a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- Estructura main -->
@@ -69,12 +88,12 @@
     <div id="top"></div>
     <main>
       <!-- Estructura  sección servicios de smart home  -->
-      <section id="service__about">
-        <div class="s__container">
-          <div class="s__container__info">
-            <div class="s__text">
+      <section id="about">
+        <div class="container">
+          <div class="about__containerInfo">
+            <div class="text__info">
               <h3 class="wave">
-                <span class="wave2"> ¿Qué es un hogar inteligente </span>
+                <span class=""> ¿Qué es un hogar inteligente </span>
                 <br />
                 Descubre cómo podemos ayudarte a transformar tu casa
                 convencional en un Smart Home.
@@ -92,46 +111,34 @@
                 comodidad y seguridad en la vida cotidiana.
               </p>
             </div>
-            <div class="s__slaider">
-              <ul class="s__slaideshow">
-                <li><img src="../img/4.png" alt="imagen1" /></li>
+            <div class="slaider">
+              <ul class="slaideshow">
+                <li><img src="../../Assets/img/7.png" alt="imagen1" /></li>
                 <li>
-                  <img src="../img/Diseño48.png" alt="imagen2" />
+                  <img src="../../Assets/img/9.png" alt="imagen2" />
                 </li>
-                <li><img src="../img/9.png" alt="a" /></li>
+                <li><img src="../../Assets/img/Diseño48.png" alt="imagen3" /></li>
               </ul>
             </div>
           </div>
-          <div class="s__container__info2">
-            <div class="s__text">
+          <div class="benefits">
+            <div class="text__benefits">
               <h3 class="wave">
-                <span class="wave2">
+                <span class="boxtitle">
                   Transformación de una casa convencional en un Smart Home.
                 </span>
               </h3>
-              <p>
-                <span
-                  >En nuestra empresa constructora, no solo nos especializamos
-                  en la construcción de hogares</span
-                >desde cero, sino que también ofrecemos la posibilidad de
-                <span
-                  >transformar una casa convencional en un hogar
-                  inteligente</span
-                >. <br />A través de una actualización de la tecnología en su
-                hogar actual, podemos convertirlo en una casa inteligente,
-                mejorando su comodidad, seguridad y eficiencia energética.
-                Podemos agregar sensores de movimiento y cámaras de seguridad,
-                instalar sistemas de iluminación inteligente y termostatos
-                programables, así como otros dispositivos domésticos
-                inteligentes. <br />La implementación de estos sistemas
-                permitirá una mayor interacción y control del hogar a través de
-                su smartphone, lo que brindará a los propietarios una mayor
-                tranquilidad y comodidad.
-              </p>
+              <ul>
+                <li>En nuestra empresa constructora, nos especializamos en la construcción de hogares desde cero.</li>
+                <li>También ofrecemos la posibilidad de transformar una casa convencional en un hogar inteligente.</li>
+                <li>A través de una actualización de la tecnología en su hogar actual, podemos convertirlo en una casa inteligente.</li>
+                <li>Mejoramos la comodidad, seguridad y eficiencia energética mediante la instalación de sensores de movimiento, cámaras de seguridad, sistemas de iluminación inteligente y termostatos programables.</li>
+                <li>Estos sistemas permiten una mayor interacción y control del hogar a través de un smartphone, brindando tranquilidad y comodidad a los propietarios.</li>
+              </ul>
             </div>
           </div>
-          <div class="s__container__info">
-            <div class="s__text">
+          <div class="container">
+            <div class="text__info">
               <h3 class="wave">
                 <span class="wave2">
                   Trabajando con expertos en tecnología y construcción.
@@ -157,20 +164,20 @@
                 >
               </p>
             </div>
-            <div class="s__slaider">
-              <ul class="s__slaideshow">
-                <li><img src="../img/7.png" alt="imagen1" /></li>
+            <div class="slaider">
+              <ul class="slaideshow">
+                <li><img src="../../Assets/img/2.png" alt="imagen1" /></li>
                 <li>
-                  <img src="../img/5.png" alt="imagen2" />
+                  <img src="../../Assets/img/4.png" alt="imagen2" />
                 </li>
-                <li><img src="../img/2.png" alt="imagen3" /></li>
+                <li><img src="../../Assets/img/5.png" alt="imagen3" /></li>
               </ul>
             </div>
           </div>
-          <div class="s__container__info">
-            <div class="s__text">
+          <div class="benefits">
+            <div class="text__benefits">
               <h3 class="wave">
-                <span class="wave2"> Beneficios de un Hogar Inteligente</span>
+                <span class="boxtitle"> Beneficios de un Hogar Inteligente</span>
               </h3>
               <p>
                 Contar con un hogar inteligente puede mejorar significativamente
@@ -191,42 +198,12 @@
                   vida</span
                 >.
               </p>
-            </div>
-            <div class="s__video">
-              <video controls autoplay muted loop>
-                <source src="../videos/Azul.mp4" type="video/mp4" />
-              </video>
-            </div>
           </div>
-          <div class="s__container__info">
-            <div class="s__video">
-              <video controls autoplay muted loop>
-                <source src="../videos/VideoEdificios1.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="s__text">
-              <h3 class="wave">Llamado a la acción</h3>
-              <p>
-                En definitiva, contar con un hogar inteligente puede mejorar
-                significativamente la calidad de vida de los propietarios, al
-                mismo tiempo que aumenta el valor de su propiedad. <br />
-                En nuestra empresa constructora, estamos comprometidos a brindar
-                a nuestros clientes las mejores soluciones de construcción,
-                desde la construcción de viviendas desde cero hasta la
-                transformación de hogares existentes en hogares inteligentes.
-                <span
-                  >No dude en contactarnos para obtener más información sobre
-                  cómo podemos ayudarlo a construir o renovar su hogar de
-                  ensueño.</span
-                >
-              </p>
-            </div>
-          </div>
-
+         
           <!-- sección contactos -->
           <section id="contact">
             <div class="contact__info">
-              <h3>Contacto</h3>
+              <h3>Contactanos para mas inflormación</h3>
               <p>
                 ¡Contáctanos hoy mismo para obtener más información sobre
                 nuestros servicios!
@@ -325,7 +302,11 @@
       <div class="copyright">
         <p>© 2023 LourdesHelman. Todos los derechos reservados.</p>
       </div>
-      <a href="#top" class="back-to-top">Volver al Inicio</a>
+      <a href="#top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FFA500" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+        </svg>
+      </a>
     </footer>
   </body>
 </html>

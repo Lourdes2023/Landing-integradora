@@ -1,0 +1,227 @@
+@media  (max-width: 900px) {
+    #hero {
+        
+        width: 100%;
+        height: auto;
+    }
+
+    .hero__container {
+        flex-direction: column;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .hero__text {
+        margin-top: 20vh;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .hero__text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero__text p {
+        font-size: 1rem;
+    }
+
+    .hero__button {
+        padding: 0.5rem;
+    }
+
+    #about, .about__containerInfo, .container, .boxtitle {
+        padding: 10px;
+        margin-top: 5vh;
+       
+    }
+ 
+  .about__container{
+  flex-direction: column;
+
+
+  }
+    .about__containerInfo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text__info, .text__service {
+        width: 100%;
+    }
+
+    .text__info h3, .text__info p {
+        font-size: 1rem;
+    }
+    .benefits .text__benefits{
+        width: 100%;
+    }
+    
+  
+    .slaider__container {
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .slaideshow {
+        flex-direction: column;
+        max-width: 100%;
+        border-radius: 0;
+      }
+
+      
+
+    .box {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .box span {
+        font-size: 24px;
+    }
+
+    .box p {
+        font-size: 18px;
+    }
+
+    .intro {
+        gap: 20px;
+        padding: 20px 5px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .intro p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .info__video {
+        width: 100%;
+    }
+     
+    
+    .cards {
+        width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+   
+      #contact {
+        flex-direction: column;
+      }
+      .contact__form {
+        margin-top: 50px;
+        width: 100%;
+      }
+    
+      .contact__form input,
+      .contact__form textarea {
+        width: 100%;
+      }
+     
+}
+
+
+
+@media (max-width: 400px) {
+    .navbar-toggler-icon {
+        font-size: 0.8rem; 
+    }
+    .navbar-brand img {
+        width: 50px; 
+        height: 50px; 
+      }
+    .hero__container {
+        flex-direction: column;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .hero__text {
+        margin-top: 20vh;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .hero__text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero__text p {
+        font-size: 1rem;
+    }
+
+    .hero__button {
+        padding: 0.5rem;
+    }
+    
+      #contact {
+        padding: 1rem 10px;
+      }
+    
+      .contact__info h3 {
+        font-size: 1.2rem;
+      }
+    
+      .contact__info p {
+        font-size: 0.8rem;
+      }
+    
+      .contact__info li {
+        font-size: 0.8rem;
+      }
+    
+      .contact__info li i {
+        font-size: 1rem;
+      }
+
+      .contact__form {
+       
+        padding: 1rem;
+      }
+    
+      .contact__form h3 {
+        font-size: 1.5rem;
+      }
+    
+      .contact__form input,
+      .contact__form textarea {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+    
+      .contact__form textarea {
+        height: 7rem;
+      }
+    
+      .contact__form button[type="submit"] {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+      }
+      .footer__container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer__column {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .footer__column h2 {
+        font-size: 16px;
+      }
+    
+      ul li {
+        font-size: 12px;
+      }
+    
+      ul li i {
+        font-size: 14px;
+      }
+}
